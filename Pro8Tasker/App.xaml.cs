@@ -1,4 +1,5 @@
-﻿using Pro8Tasker.MVVM.Views;
+﻿using Pro8Tasker.MVVM.ViewModels;
+using Pro8Tasker.MVVM.Views;
 
 namespace Pro8Tasker
 {
@@ -8,7 +9,7 @@ namespace Pro8Tasker
         {
             InitializeComponent();
 
-            MainPage = new MainView();
+            MainPage = new NavigationPage(new MainView());
         }
     }
 }

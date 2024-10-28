@@ -42,4 +42,12 @@
         <Setter Property="WidthRequest" Value="{StaticResource shadow}"/>
     </Style>
 
+    <Style x:Key="Task" TargetType="Entry">
+        <Setter Property="FontSize" Value="Large"/>
+        <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        <Setter Property="PlaceholderColor" Value="{StaticResource LightBlue}"/>
+        <Setter Property="VerticalOptions" Value="Center"/>
+    </Style>
+
+
 </ResourceDictionary>

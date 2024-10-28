@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:converters="clr-namespace:Pro8Tasker.Converters"
              x:Class="Pro8Tasker.MVVM.Views.MainView"
-             Title="MainView">
+             Title="PLANIFICA-T">
 
     <ContentPage.Resources>
         <converters:ColorConverter x:Key="ColorConverter"/>
@@ -61,5 +61,8 @@
             </CollectionView>
 
         </Grid>
+        <Button Grid.Row="2"
+                Clicked="Button_Clicked"
+                Text="+"/>
     </Grid>
 </ContentPage>
