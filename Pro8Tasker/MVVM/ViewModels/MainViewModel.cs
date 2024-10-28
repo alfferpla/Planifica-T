@@ -1,4 +1,5 @@
 ﻿using Pro8Tasker.MVVM.Models;
+using PropertyChanged;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -8,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace Pro8Tasker.MVVM.ViewModels
 {
+    [AddINotifyPropertyChangedInterface]
     public class MainViewModel
     {
         public ObservableCollection<Category>? Categories { get; set; }
