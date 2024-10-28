@@ -47,43 +47,43 @@ namespace Pro8Tasker.MVVM.ViewModels
             {
                 new MyTask
                 {
-                    TaskName = "Upload exercise files",
+                    TaskName = "Ir al gimnasio",
                     Completed = false,
                     CategoryId = 1,
                 },
                 new MyTask
                 {
-                    TaskName = "Plan next course",
+                    TaskName = "Partido de tenis",
                     Completed = false,
                     CategoryId = 1,
                 },
                 new MyTask
                 {
-                    TaskName = "Upload new ASP.NET video on YouTube",
+                    TaskName = "Actualizar portfolio",
                     Completed = false,
                     CategoryId = 2
                 },
                 new MyTask
                 {
-                    TaskName = "Fix Settings.cs class of the project",
+                    TaskName = "Responder emails",
                     Completed = false,
                     CategoryId = 2
                 },
                 new MyTask
                 {
-                    TaskName = "Update github repository",
+                    TaskName = "Entregar proyecto",
                     Completed = true,
                     CategoryId = 2
                 },
                 new MyTask
                 {
-                    TaskName = "Buy eggs",
+                    TaskName = "Descargar apuntes",
                     Completed = false,
                     CategoryId = 3
                 },
                 new MyTask
                 {
-                    TaskName = "Go for the pepperoni pizza",
+                    TaskName = "Aprender probabilidad",
                     Completed = false,
                     CategoryId = 3
                 },
