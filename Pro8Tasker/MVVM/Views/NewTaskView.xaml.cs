@@ -30,4 +30,42 @@ public partial class NewTaskView : ContentPage
 			await DisplayAlert("Selección inválida", "Debes seleccionar una categoría", "Aceptar");
 		}
     }
+
+    private async void AddCategoryClicked(object sender, EventArgs e)
+    {
+		var vm = BindingContext as NewTaskViewModel;
+
+
+		/* Cambio no fusionado mediante combinación del proyecto 'Pro8Tasker (net8.0-windows10.0.19041.0)'
+		Antes:
+				string category = await DisplayPromptAsync("Nueva Categoría", "Introduce el nombre de la nueva categoría",
+					maxLength: 15,
+		Después:
+				string category = await DisplayPrompt("Nueva Categoría", "Introduce el nombre de la nueva categoría",
+					maxLength: 15,
+		*/
+		string category =
+			await DisplayPromptAsync("Nueva Categoría",
+			"Introduce el nombre de la nueva categoría",
+			maxLength: 15,
+			keyboard: Keyboard.Text);
+
+		var r = new Random();
+
+		if (!string.IsNullOrEmpty(category))
+		{
+			vm?.Categories?.Add(new Category
+			{
+				Id = vm.Categories.Max( x => x.Id ) +1,
+				Color = Color.FromRgb(
+					r.Next(0,255),
+					r.Next(0,255),
+					r.Next(0,255)).ToHex(),
+				CategoryName = category
+			});
+		}
+    }
+
+    
+
 }
