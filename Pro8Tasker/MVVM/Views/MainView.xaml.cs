@@ -23,7 +23,7 @@ public partial class MainView : ContentPage
 			BindingContext = new NewTaskViewModel
 			{
 				Tasks = mainViewModel.Tasks,
-				categories = mainViewModel.Categories,
+				Categories = mainViewModel.Categories,
 			}
 		};
 		Navigation.PushAsync(taskView);

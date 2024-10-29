@@ -12,7 +12,7 @@ namespace Pro8Tasker.MVVM.ViewModels
     {
         public string? Task {  get; set; }
         public ObservableCollection<MyTask>? Tasks { get; set; }
-        public ObservableCollection<Category>? categories { get; set; }
+        public ObservableCollection<Category>? Categories { get; set; }
         
     }
 }
